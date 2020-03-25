@@ -1,5 +1,7 @@
 # node_crawler
-Practice for node crawler
+> Practice for node crawler
+
+[![Build Status](https://travis-ci.com/jerseysu/node_crawler.svg?branch=master)](https://travis-ci.com/jerseysu/node_crawler)
 
 ### Install Env
 ```sh
