@@ -8,12 +8,14 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "request": "^2.88.2"
+    "jest": "^25.2.3",
+    "request": "^2.88.2",
+    "utf8": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
     "ibon": "node lib/ibon.js",
-    "test": "echo test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
