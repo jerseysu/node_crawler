@@ -15,7 +15,8 @@
   "devDependencies": {},
   "scripts": {
     "ibon": "node lib/ibon.js",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --collectCoverage"
   },
   "repository": {
     "type": "git",

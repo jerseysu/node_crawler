@@ -6,5 +6,6 @@ cache:
     - "node_modules"
 install:
     - npm install
-script:
+steps:
     - npm run ibon
+    - npm run test:coverage
