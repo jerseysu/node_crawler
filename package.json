@@ -7,9 +7,11 @@
     "lib": "lib"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
+    "circular-json": "^0.5.9",
     "jest": "^25.2.3",
-    "request": "^2.88.2",
+    "querystring": "^0.2.0",
     "utf8": "^3.0.0"
   },
   "devDependencies": {},
@@ -17,6 +19,10 @@
     "ibon": "node lib/ibon.js",
     "test": "jest",
     "test:coverage": "jest --collectCoverage"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
