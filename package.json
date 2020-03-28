@@ -28,6 +28,10 @@
     "verbose": true,
     "testEnvironment": "node"
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jerseysu/node_crawler.git"
