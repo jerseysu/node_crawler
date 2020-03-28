@@ -1,13 +1,10 @@
-const { parseStoreInfo } = require('../lib/ibon');
-const fs = require('fs');
-const path = require('path');
-const CircularJSON = require('circular-json');
+const { parseStoreInfo, ibonAPI } = require('../lib/ibon');
+const mockAxios = require("axios")
+const ibonAPIResult = require("../__fixtures__/ibonAPIResult")
 
 test('Response with expected key - code, storeName, address', async () => {
-  // mock '台北市' ibonAPI response
-  const ibonInfoStr = fs.readFileSync(path.resolve(__dirname, 'ibonInfo.txt'));
-
-  const ibonInfoObj = CircularJSON.parse(ibonInfoStr);
-  const storeInfo = await parseStoreInfo(ibonInfoObj);
+  mockAxios.post.mockImplementationOnce(() => Promise.resolve(ibonAPIResult));
+  const ibonInfo = await ibonAPI('台北市')
+  const storeInfo = await parseStoreInfo(ibonInfo);
   expect(storeInfo[1]).toHaveProperty('code', 'storeName', 'address')
 })
