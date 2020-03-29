@@ -8,4 +8,5 @@ install:
     - npm install
 steps:
     - npm run ibon
+    - npm run lint
     - npm run test:coverage
