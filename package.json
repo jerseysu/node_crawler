@@ -10,7 +10,7 @@
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "circular-json": "^0.5.9",
-    "jest": "^25.2.3",
+    "jest": "^29.2.2",
     "querystring": "^0.2.0",
     "utf8": "^3.0.0"
   },
